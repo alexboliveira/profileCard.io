@@ -1,0 +1,123 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100&display=swap');
+
+
+
+:root{
+    --corPrimaria: hsl(185, 75%, 39%);
+    --corPrimaria2: hsl(229, 23%, 23%);
+    --corPrimaria3: hsl(227, 10%, 46%);
+
+
+    --corNeutra1: hsl(0, 0%, 59%);
+    --corNeutra2: white;
+
+    --font: 18px;  /*name and stats*/
+}
+
+
+
+
+*{ 
+    margin:0;
+    padding: 0;
+    font-size: 100%;
+    overflow: hidden;
+    /*font*/
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    /*fim font*/
+
+    
+    /*font 400 700*/
+    /*mobile 375px  | Desktop 1440   |  screen siza 320px */
+    max-width: 100%;
+    max-height: 100%;
+    font-size: var(--font);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    background-color: var(--corPrimaria);
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+article{
+    z-index: 1 !important;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corNeutra2);
+    border-radius: 18px;
+    align-items: center; 
+}
+article h1{
+    margin-top: var(--font);
+    font-weight: 700;
+}
+article h2{
+    margin-top: calc(var(--font) * 0.5);
+    color: var(--corNeutra1);
+    font-size: calc(var(--font) * 0.8);
+}
+article h1 span{
+    font-weight: 400 !important;
+}
+
+article  img:nth-of-type(2){
+    border-radius:  50% 50%;
+    border: 6px solid var(--corNeutra2);
+    margin-top: -42px;
+
+}
+
+
+article ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--font) * 2);
+    border-top: 0.1rem solid var(--corPrimaria);
+    padding-top: var(--font);
+    padding-bottom: var(--font);
+    margin-top: var(--font);
+
+
+}
+article ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+article ul li p{
+    font-weight: 700;
+}
+article ul li span{
+    font-size: calc(var(--font) * 0.6);
+    font-weight: 400;
+    color: var(--corPrimaria);
+}
+
+main > img:nth-of-type(1){
+    position: fixed;
+    left: -10%;
+    top:-50%;
+}
+
+main > img:nth-of-type(2){
+    position: fixed;
+    bottom: -50%;
+    right: -10%;
+
+
+}
